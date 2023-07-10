@@ -18,6 +18,10 @@
             car2.price = 7000000;
             car2.CarDetails();
 
+            Lion lion = new Lion();
+            lion.name = "Simba";
+            lion.Run(); 
+
         }
     }
 }
