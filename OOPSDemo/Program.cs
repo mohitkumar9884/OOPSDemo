@@ -33,6 +33,13 @@ namespace OOPSDemo
                     Addition.Add(20, 40);
                     Addition.Add(20, 40, 60.45);
                     break;
+                    case 4:
+                    PartTime partTime = new PartTime();
+                    partTime.GetSalary();
+                    partTime.name = "Sam";
+                    partTime.salary = 9000;
+                    partTime.EmployeeDetails();
+                    break;
                     default :
                     Console.WriteLine("Please chose a program within given options");
                     break;
