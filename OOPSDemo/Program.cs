@@ -1,4 +1,5 @@
-﻿using OOPSDemo.Polymarphism;
+﻿using OOPSDemo.Abstraction;
+using OOPSDemo.Polymarphism;
 using System.Collections;
 
 namespace OOPSDemo
@@ -8,7 +9,7 @@ namespace OOPSDemo
         static void Main(string[] args)
         {
             Console.WriteLine("Please chose any one program from below options");
-            Console.WriteLine("1.ClassAndObject concept\n2.Inheritance\n3.Method overloading\n4.Method overriding");
+            Console.WriteLine("1.ClassAndObject concept\n2.Inheritance\n3.Method overloading\n4.Method overriding\n5.Abstraction");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -39,6 +40,11 @@ namespace OOPSDemo
                     partTime.name = "Sam";
                     partTime.salary = 9000;
                     partTime.EmployeeDetails();
+                    break;
+                    case 5:
+                    SBIAtm atm = new SBIAtm();
+                    atm.WithDrawMoney();
+                    atm.ConnectingToBackEnd();
                     break;
                     default :
                     Console.WriteLine("Please chose a program within given options");
